@@ -19,12 +19,16 @@ class LoginPanel extends JPanel {
 
         JLabel title = new JLabel("Login / Register", SwingConstants.CENTER);
         title.setFont(new Font("ROMAN_BASELINE", Font.BOLD, 22)); //use Unique ROMAN BASELINE font for appearance 
+        Color PINK = new Color(255, 192, 203);
+        Color RED = new Color(255,100,0);
 
         username = new JTextField();
         password = new JPasswordField();
 
         registerBtn = new JButton("Register");
         loginBtn = new JButton("Login");
+        registerBtn.setBackground(PINK);
+        loginBtn.setBackground(RED);
 
         add(title); //actually add in the functional elements 
         add(username);
